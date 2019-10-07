@@ -23,7 +23,7 @@ const Clocks = () => {
 
 	return (
 		<div className='clocks'>
-			<div className='clocks__wrap'>
+			<div className='clocks__time-wrap'>
 				{ tz.map(zone => (
 					<div className='clocks__time'>
 						{`${currentTime.tz(zone).get('hour')} : ${currentTime.tz(zone).get('minute')} : ${currentTime.tz(zone).get('second')}`}
