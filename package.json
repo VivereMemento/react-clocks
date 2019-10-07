@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://viverememento.github.io/react-clocks/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --env development",
-    "dev-docker": "webpack-dev-server --env development-docker",
     "build": "npm run clean && webpack --env production",
     "clean": "rimraf ./dist",
     "deploy": "gh-pages -d dist"
