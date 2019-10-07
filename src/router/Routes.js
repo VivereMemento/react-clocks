@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Clocks from '../components/Clocks/Clocks';
 
 const Routes = () => (
 	<Switch>
-		<Route path='/' render={() => <div>Hello</div>} />
+		<Route path='/' render={() => <Clocks />} />
 	</Switch>
 );
 

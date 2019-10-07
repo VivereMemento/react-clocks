@@ -1,0 +1,22 @@
+.clocks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+
+	&__wrap {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__time {
+		width: 30%;
+		padding: 20px;
+		font-size: 40px;
+		text-align: center;
+		color: green;
+		background: #000;
+	}
+}

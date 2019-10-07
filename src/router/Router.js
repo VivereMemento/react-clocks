@@ -5,6 +5,7 @@ import HeaderContent from '../components/HeaderContent/HeaderContent';
 import FooterContent from '../components/FooterContent/FooterContent';
 import PageLayout from '../components/PageLayout/PageLayout';
 
+const { Container } = PageLayout;
 const Router = () => (
 	<BrowserRouter basename='/'>
 		<PageLayout
@@ -12,7 +13,9 @@ const Router = () => (
 				<HeaderContent />
 			}
 			main={
-				<Routes />
+				<Container>
+					<Routes />
+				</Container>
 			}
 			footer={
 				<FooterContent />

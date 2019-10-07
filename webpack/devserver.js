@@ -7,8 +7,8 @@ module.exports = {
 		disableHostCheck: true,
 		port: 9002,
 		proxy: [{
-			path: '/api/v1.0/',
-			target: 'https//stage.bodyfitplan.xyz',
+			path: '/api',
+			target: 'https//localhost:9001',
 		}]
 	}
 }
