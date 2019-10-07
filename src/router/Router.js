@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
-import AsideContent from '../components/AsideContent/AsideContent';
 import HeaderContent from '../components/HeaderContent/HeaderContent';
+import FooterContent from '../components/FooterContent/FooterContent';
 import PageLayout from '../components/PageLayout/PageLayout';
 
 const Router = () => (
@@ -11,11 +11,11 @@ const Router = () => (
 			header={
 				<HeaderContent />
 			}
-			aside={
-				<AsideContent />
-			}
 			main={
 				<Routes />
+			}
+			footer={
+				<FooterContent />
 			}
 		/>
 	</BrowserRouter>
