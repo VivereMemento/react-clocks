@@ -68,7 +68,9 @@ const useDataApi = (
 					})
 					.then((res) => {
 						if (!didCancel) {
-							dispatch({ type: FETCH_SUCCESS, payload: res });
+							setTimeout(() => {
+								dispatch({ type: FETCH_SUCCESS, payload: res });
+							}, 3000);
 						}
 					});
 			} catch (error) {
@@ -85,8 +87,8 @@ const useDataApi = (
   
 	return [state, setUrl, setParams];
 };
-const mainKey = '6adb21d430794d5da3db942ea069ff77';
-const baseUrl = key => `https://newsapi.org/v2/sources?apiKey=${key}`;
+
+const baseUrl = key => `https://www.json-generator.com/api/json/get/${key}`;
 const getData = curry(
 	(url, isImmediateLoading, initialData) => useDataApi(baseUrl(url), isImmediateLoading, initialData)
 );
@@ -104,11 +106,11 @@ const getData = curry(
 // };
 // const notImmediateLoading = false;
 const immediateLoading = true;
-const getNews = getData(mainKey, immediateLoading);
+const getZone = getData('coDIcXOBMy?indent=2', immediateLoading);
 
 export const api = {
 	baseUrl,
-	getNews
+	getZone
 };
 
 export default useDataApi;

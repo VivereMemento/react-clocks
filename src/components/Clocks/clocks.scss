@@ -1,3 +1,5 @@
+@import '../../style//_misc/mixins';
+
 .clocks {
 	display: flex;
 	flex-direction: column;
@@ -5,18 +7,43 @@
 	align-items: center;
 	height: 100%;
 
+	&__loader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		font-size: 24px;
+		color: #000;
+	}
+
 	&__time-wrap {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+
+		@include tablets {
+			flex-direction: column;
+		}
 	}
 
 	&__time {
+		display: flex;
+		flex-direction: column;
 		width: 30%;
 		padding: 20px;
 		font-size: 40px;
 		text-align: center;
 		color: green;
 		background: #000;
+		
+		@include tablets {
+			width: 100%;
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }

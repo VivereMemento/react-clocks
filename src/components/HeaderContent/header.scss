@@ -2,5 +2,13 @@
 @import "../../style/_misc/mixins";
 
 .header {
-	background: yellow;
+	background: #7c34a0;
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		font-size: 35px;
+	}
 }

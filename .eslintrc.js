@@ -58,6 +58,7 @@ module.exports = {
 		"jsx-a11y/click-events-have-key-events": 0,
 		"jsx-a11y/no-static-element-interactions": 0,
 		"jsx-a11y/no-noninteractive-element-interactions": 0,
-		"react/jsx-wrap-multilines": "off"
+		"react/jsx-wrap-multilines": "off",
+		"react/jsx-closing-tag-location": "off"
 	}
 };

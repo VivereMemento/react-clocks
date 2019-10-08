@@ -1,1 +1,11 @@
 @import '../../style//_misc/mixins';
+
+.footer {
+	background: #7c34a0;
+
+	&__content {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+}
